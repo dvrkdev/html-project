@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Brew Haven - Fresh coffee, cozy vibes, and community spirit. Serving locally sourced beans and handcrafted drinks daily.">
+    <meta name="keywords"
+        content="coffee shop, cafe, latte art, local coffee, Brew Haven, espresso, cold brew, cappuccino, barista">
+    <meta name="author" content="https://github.com/dvrkdev">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Brew Haven &dash; Coffee &amp; Community</title>
+</head>
+
+<body>
+    <!-- site header -->
+    <header>
+        <div>
+            <h1>Brew Haven</h1>
+            <p>Fresh Brews &bull; Cozy Vibes &bull; Local Beans</p>
+        </div>
+
+        <!-- main site navigation -->
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- /site header -->
+
+    <!-- main content -->
+    <main>
+        <!-- hero section -->
+        <section id="hero" aria-labelledby="hero-title">
+            <h2 id="hero-title" class="visually-hidden">Welcome to Brew Haven</h2>
+            <figure>
+                <img src="images/coffee-hero.jpg" alt="Barista pouring latte art into a ceramic cup" width="400">
+                <figcaption>
+                    Open daily: <time datetime="07:00">7:00</time> &dash; <time datetime="20:00">20:00</time>
+                </figcaption>
+            </figure>
+            <p>Join us for the perfect cup of coffee in a warm, inviting atmosphere.</p>
+        </section>
+        <!-- /hero section -->
+
+        <!-- menu section -->
+        <section id="menu" aria-labelledby="menu-title">
+            <h2 id="menu-title">Customer Favorites</h2>
+            <div>
+                <article>
+                    <h3>Flat White</h3>
+                    <p>Double shot espresso, steamed milk.</p>
+                </article>
+                <article>
+                    <h3>Cold Brew</h3>
+                    <p>12-hour steep, smooth &amp; bold.</p>
+                </article>
+                <article>
+                    <h3>Mocha Delight</h3>
+                    <p>Chocolate, espresso, whipped cream.</p>
+                </article>
+            </div>
+            <p><a href="#">View Full Menu</a></p>
+        </section>
+        <!-- /menu section -->
+
+        <!-- about section -->
+        <section id="about" aria-labelledby="about-title">
+            <h2 id="about-title">Our Story</h2>
+            <p>
+                Brew Haven was founded in <time datetime="2015">2015</time> with a mission to bring together
+                coffee lovers and the community. We source our beans from local roasters and craft each drink with care.
+            </p>
+        </section>
+        <!-- /about section -->
+
+        <!-- gallery section -->
+        <section id="gallery" aria-labelledby="gallery-title">
+            <h2 id="gallery-title">Inside Brew Haven</h2>
+            <div>
+                <figure>
+                    <img src="images/latte-art.jpg" alt="Close-up of latte art heart" width="300">
+                    <figcaption>Signature Latte Art</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/coffee-beans.jpg" alt="Fresh roasted coffee beans in burlap sack" width="300" />
+                    <figcaption>Fresh Local Beans</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/interior.jpg" alt="Cozy wooden coffee shop interior" width="300" />
+                    <figcaption>Cozy Interior</figcaption>
+                </figure>
+            </div>
+        </section>
+        <!-- /gallery section -->
+
+        <!-- contact section -->
+        <section id="contact" aria-labelledby="contact-title">
+            <h2 id="contact-title">Contact Us</h2>
+            <form action="https://httpbin.org/post" method="post">
+                <fieldset>
+                    <legend>Contact Form</legend>
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" placeholder="Enter your name" minlength="3"
+                            maxlength="64" pattern="[A-Za-z\s]+" required aria-required="true">
+                        <p>
+                            <small>Write your full name using uppercase and lowercase letters (3&dash;64
+                                characters).</small>
+                        </p>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email" required
+                            aria-required="true">
+                        <p><small>Enter a valid email address (example: john@example.com).</small></p>
+                    </div>
+                    <div>
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="message" cols="30" rows="10"
+                            placeholder="Write your message here"></textarea>
+                        <p><small>Optional: Share your thoughts, feedback, or questions.</small></p>
+                    </div>
+                </fieldset>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+
+            <aside>
+                <h3>Visit Us</h3>
+                <address>
+                    101 Roast Street, Beanville<br />
+                    Phone: <a href="tel:+123456789">+1 234 567 89</a><br />
+                    Email: <a href="mailto:hello@brewhaven.com">hello@brewhaven.com</a>
+                </address>
+            </aside>
+        </section>
+        <!-- /contact section -->
+    </main>
+    <!-- /main content -->
+
+    <!-- site footer -->
+    <footer>
+        <nav aria-label="Footer navigation">
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <p><small>&copy; <time datetime="2025">2025</time> Brew Haven. All rights reserved.</small></p>
+    </footer>
+    <!-- /site footer -->
+</body>
+
+</html>
